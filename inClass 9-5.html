@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content="width=device=width">
+    <script type="text/javascript" src="C:\Users\empty\Downloads\handlebars-v4.0.10.js"></script>
+    <script type="text/javascript" src="C:/Users/empty/Downloads/jquery-3.2.1.js"></script>
+
+    <title>Class Work</title>
+  </head>
+  <body>
+    1st part today   no handlebars
+    <button id='button'>add</button>
+    <input id='input' value="type something here">
+    <ul id='list'>
+      <li>first item</li>
+    </ul>
+
+    <script>
+      const button = $('#button');
+
+      button.on('click', function() {
+        const text = $('#input').val();
+
+        const li = $('<li/>'); // creates a new list item
+        li.text(text);
+
+        const list = $('#list');
+
+        list.append(li);
+      });
+    </script>
+<!--
+    <div id="canvas"></div>
+
+    <script>
+      const canvas = $('#canvas');
+      const templateString = "<p>hello {{name}}</p>";
+      const data = {
+        name: 'Gaston'
+      };
+      const template = Handlebars.compile(templateString);
+      const result = template(data);
+
+      canvas.html(result;
+    </script>
+-->
+</body>
+</html>
